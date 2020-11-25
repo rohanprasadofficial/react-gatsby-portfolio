@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "react-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Portfolio site built on React , powered by gatsby & styled-components",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rohan Prasad <rohanpd.work@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.26.1",
@@ -26,7 +26,7 @@
     "prettier": "2.1.2"
   },
   "keywords": [
-    "gatsby"
+    "Rohan Prasad", "rohan prasad", "Rohan", "Rohan Youtube"
   ],
   "license": "0BSD",
   "scripts": {

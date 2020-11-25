@@ -9,8 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Footer from "./footer"
+import { Footer, Header } from "../index"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,11 +29,9 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-          <Footer/>
+        <Footer />
       </div>
     </>
   )
@@ -44,4 +41,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export { Layout }

@@ -1,14 +1,18 @@
 import React from "react"
+import { Layout, SEO } from "../components"
+import GlobalStyle from "../design-language/styles/GlobalStyles"
+import { ThemeProvider } from "styled-components"
+import designLanguage from "../design-language"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// const theme = { red: "#EB455A", blue: "#3793E0" }
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-  </Layout>
+  <ThemeProvider theme={designLanguage}>
+    <GlobalStyle />
+    <Layout>
+      <SEO title="Home" />
+    </Layout>
+  </ThemeProvider>
 )
-
-
 
 export default IndexPage
