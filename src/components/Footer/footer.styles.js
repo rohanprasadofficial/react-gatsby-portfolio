@@ -4,31 +4,36 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   display: flex;
-  justify-content: space-between;
-  bottom: 0;
   margin: 0 auto;
-  min-width: 960;
-  font-family: "Comfortaa", cursive;
-  background-color: ${props => props.theme.colors.blues[300]};
-  padding: 1.45rem 1.0875rem;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
 
   .general-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     p {
-      padding: 0;
+      padding: 0.5em;
+      span {
+        color: #00865e;
+      }
     }
   }
   .social-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: ${props => props.theme.colors.reds[500]};
+    /* background-color: ${props => props.theme.colors.reds[500]}; */
 
     .social-handles {
       display: flex;
       justify-content: space-between;
+      svg {
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+      }
     }
   }
 `

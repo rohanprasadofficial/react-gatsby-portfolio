@@ -9,7 +9,10 @@ function Footer() {
     <StyledFooter>
       <div className="general-info">
         <p>Thanks for being here.</p>
-        <p>Smile , it’s a good day - “Rohan P.”</p>
+        <p>
+          {" "}
+          <span>Smile , it’s a good day</span> - “Rohan P.”
+        </p>
         <p>It’s 3 PM in Rohan’s City.</p>
       </div>
       <div className="social-info">
