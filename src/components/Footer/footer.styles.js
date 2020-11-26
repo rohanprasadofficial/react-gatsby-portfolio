@@ -25,16 +25,6 @@ const StyledFooter = styled.footer`
     flex-direction: column;
     justify-content: space-around;
     /* background-color: ${props => props.theme.colors.reds[500]}; */
-
-    .social-handles {
-      display: flex;
-      justify-content: space-between;
-      svg {
-        height: 25px;
-        width: 25px;
-        cursor: pointer;
-      }
-    }
   }
 `
 export default StyledFooter
