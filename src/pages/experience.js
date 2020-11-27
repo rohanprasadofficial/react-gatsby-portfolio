@@ -1,10 +1,11 @@
 import React from "react"
 import { AiFillCaretRight } from "react-icons/ai"
+import styled from "styled-components"
 import { Header } from "../components"
 
 export default function Experience() {
   return (
-    <section>
+    <StyledDiv>
       <Header />
       <h1>where i work </h1>
       <p>
@@ -78,6 +79,11 @@ export default function Experience() {
           </ul>
         </div>
       </div>
-    </section>
+    </StyledDiv>
   )
 }
+
+const StyledDiv = styled.div`
+  background-color: ${props => props.theme.background};
+  color: ${props => props.theme.foreground};
+`

@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { Footer, Header } from "../index"
+import styled from "styled-components"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,9 +26,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
+      <StyledDiv>
         <Footer />
-      </div>
+      </StyledDiv>
     </>
   )
 }
@@ -35,5 +36,9 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+const StyledDiv = styled.div`
+  color: ${props => console.log(props)};
+`
 
 export { Layout }

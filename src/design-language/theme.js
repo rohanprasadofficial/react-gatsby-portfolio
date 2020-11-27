@@ -4,6 +4,16 @@ import { fontSizes, fontWeights } from "./typography"
 // Light or Dark theme options
 
 const theme = {
+  dark: {
+    foreground: "#ffffff",
+    background: "#000000",
+  },
+
+  light: {
+    background: "#ffffff",
+    foreground: "#000000",
+  },
+
   colors,
   fontSizes,
   fontWeights,

@@ -20,7 +20,7 @@ export default function StoryTelling() {
           storytellers from the normal once. Someday you might see me creating
           great stories.
         </p>
-        <p> How it can help people i teach ? </p>
+        <p> How it can help people i teach ? </p>{" "}
         <p>
           I am polishing the skills and i am looking to combine my coding skills
           with filmmaking to bring something new out of box. stay tuned.
