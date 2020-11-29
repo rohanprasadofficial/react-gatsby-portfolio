@@ -84,6 +84,6 @@ export default function Experience() {
 }
 
 const StyledDiv = styled.div`
-  background-color: ${props => props.theme.background};
-  color: ${props => props.theme.foreground};
+  background-color: ${props => props.theme.body.background};
+  color: ${props => props.theme.body.title.foreground};
 `

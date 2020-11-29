@@ -5,13 +5,41 @@ import { fontSizes, fontWeights } from "./typography"
 
 const theme = {
   dark: {
-    foreground: "#ffffff",
-    background: "#000000",
+    body: {
+      background: colors.gray[900],
+      title: {
+        foreground: colors.white,
+      },
+      subtitle: {
+        foreground: colors.white,
+      },
+      description: {
+        forground: colors.gray[400],
+      },
+      icon: {
+        background: colors.whiteAlpha[200],
+        forground: colors.whiteAlpha[900],
+      },
+    },
   },
 
   light: {
-    background: "#ffffff",
-    foreground: "#000000",
+    body: {
+      background: colors.white,
+      title: {
+        foreground: colors.black,
+      },
+      subtitle: {
+        foreground: colors.black,
+      },
+      description: {
+        forground: colors.gray[700],
+      },
+      icon: {
+        background: colors.gray[100],
+        forground: colors.gray[900],
+      },
+    },
   },
 
   colors,
@@ -39,9 +67,9 @@ const theme = {
     1: "0px 8px 4px rgba(0, 0, 0, 0.12), 0px 8px 16px rgba(0, 0, 0, 0.24)",
     2: "0px 4px 4px rgba(0, 0, 0, 0.12), 0px 16px 32px rgba(0, 0, 0, 0.24)",
 
-    active: `inset 0px -2px 0px ${colors.blues[300]}`,
-    underline: `inset 0px -2px 0px ${colors.grays[100] + "1a"}`,
-    fadeunder: `inset 0px 8px 8px 0px ${colors.grays[700] + "cc"}`,
+    active: `inset 0px -2px 0px ${colors.blue[300]}`,
+    underline: `inset 0px -2px 0px ${colors.gray[100] + "1a"}`,
+    fadeunder: `inset 0px 8px 8px 0px ${colors.gray[700] + "cc"}`,
   },
 }
 
