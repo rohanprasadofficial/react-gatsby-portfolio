@@ -12,7 +12,9 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body{
-  background-color:#f5f6fa;
+    background-color: ${props => props.theme.body.background};
+    transition: background-color 2s ease;
+
   }
   
 `

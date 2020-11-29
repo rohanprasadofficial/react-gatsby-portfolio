@@ -14,11 +14,11 @@ const theme = {
         foreground: colors.white,
       },
       description: {
-        forground: colors.gray[400],
+        foreground: colors.gray[400],
       },
       icon: {
         background: colors.whiteAlpha[200],
-        forground: colors.whiteAlpha[900],
+        foreground: colors.whiteAlpha[900],
       },
     },
   },
@@ -33,11 +33,11 @@ const theme = {
         foreground: colors.black,
       },
       description: {
-        forground: colors.gray[700],
+        foreground: colors.gray[700],
       },
       icon: {
         background: colors.gray[100],
-        forground: colors.gray[900],
+        foreground: colors.gray[900],
       },
     },
   },

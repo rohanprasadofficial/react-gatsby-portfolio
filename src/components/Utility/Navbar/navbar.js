@@ -47,9 +47,6 @@ const StyledNav = styled.nav`
 
   padding: 15px 0;
 
-  /* box-shadow: 2px 5px 10px #aaaaaa; */
-  font-family: "Comfortaa", cursive;
-
   .logo {
     margin: auto 0;
     color: #00865e;
