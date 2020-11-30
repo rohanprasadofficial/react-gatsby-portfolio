@@ -20,7 +20,7 @@ const IndexPage = () => {
       <button onClick={() => setTh(!th)}>Change theme</button>
       <Header />
       <SEO title="Home" />
-      <StyledHome>
+      {/* <StyledHome>
         <h1>Hey, I'm Rohan</h1>
         <p>a coder who designs sometimes.</p>
         <h2>// recently published</h2>
@@ -28,9 +28,9 @@ const IndexPage = () => {
         <BlogCard />
 
         <Newsletter />
-      </StyledHome>
+      </StyledHome> */}
 
-      {/* <Contact /> */}
+      <Contact />
 
       <Footer />
     </ThemeProvider>
