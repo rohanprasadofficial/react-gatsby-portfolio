@@ -1,26 +1,15 @@
 import React from "react"
-import { Footer, Header, Layout, SEO } from "../components"
-import GlobalStyle from "../design-language/styles/GlobalStyles"
+import { SEO } from "../components"
 import styled, { ThemeProvider } from "styled-components"
-import designLanguage from "../design-language"
-import Experience from "./experience"
-import { useState } from "react"
 import BlogCard from "../components/Utility/BlogCard/BlogCard"
 import Newsletter from "../components/Utility/newsletter"
-import Contact from "./contact"
-// const theme = { red: "#EB455A", blue: "#3793E0" }
+import Container from "../components/container"
 
 const IndexPage = () => {
-  const [th, setTh] = useState(false)
-
   return (
-    <ThemeProvider theme={th ? designLanguage.dark : designLanguage.light}>
-      <GlobalStyle />
-
-      <button onClick={() => setTh(!th)}>Change theme</button>
-      <Header />
-      <SEO title="Home" />
-      {/* <StyledHome>
+    <Container>
+      <StyledHome>
+        <SEO title="Home" />
         <h1>Hey, I'm Rohan</h1>
         <p>a coder who designs sometimes.</p>
         <h2>// recently published</h2>
@@ -28,40 +17,11 @@ const IndexPage = () => {
         <BlogCard />
 
         <Newsletter />
-      </StyledHome> */}
-
-      <Contact />
-
-      <Footer />
-    </ThemeProvider>
+      </StyledHome>
+    </Container>
   )
 }
 
-const StyledHome = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 50%;
-  margin: 1rem auto;
-  height: 75vh;
-  h1 {
-    font-size: 3rem;
-    color: ${props => props.theme.body.title.foreground};
-    margin: 1rem 0;
-    transition: color 2s ease;
-  }
-  p {
-    color: ${props => props.theme.body.description.foreground};
-    font-size: 1rem;
-    transition: color 2s ease;
-  }
-  h2 {
-    font-size: 2.2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: ${props => props.theme.body.title.foreground};
-    transition: color 2s ease;
-  }
-`
+const StyledHome = styled.section``
 
 export default IndexPage

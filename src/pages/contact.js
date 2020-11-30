@@ -1,38 +1,37 @@
 import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
-import { Header } from "../components"
-import Social from "../components/Utility/Social/social"
+import React, { useState } from "react"
+import styled, { ThemeProvider } from "styled-components"
+import { Footer, Header, SEO } from "../components"
+import Container from "../components/container"
+import designLanguage from "../design-language"
 
 export default function Contact() {
+  const [th, setTh] = useState(false)
   return (
-    <StyledContact>
-      <h1>let’s collaborate</h1>
-      <p>
-        For anything , please reach out to :{" "}
-        <span>rohanpd.work@gmail.com </span>{" "}
-      </p>
+    <Container>
+      <SEO title="Contact" />
 
-      <p>
-        Please follow while reaching out :{" "}
-        <span>
-          <Link to="https://sbmueller.github.io/nohello/" target="blank">
-            [ LINK ]
-          </Link>
-        </span>
-      </p>
-    </StyledContact>
+      <StyledContact>
+        <h1>let’s collaborate</h1>
+        <p>
+          For anything , please reach out to :{" "}
+          <span>rohanpd.work@gmail.com </span>{" "}
+        </p>
+
+        <p>
+          Please follow while reaching out :{" "}
+          <span>
+            <Link to="https://sbmueller.github.io/nohello/" target="blank">
+              [ LINK ]
+            </Link>
+          </span>
+        </p>
+      </StyledContact>
+    </Container>
   )
 }
 
 const StyledContact = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 50%;
-  margin: 1rem auto;
-  height: 50vh;
-
   a {
     color: #00bfa5;
   }
