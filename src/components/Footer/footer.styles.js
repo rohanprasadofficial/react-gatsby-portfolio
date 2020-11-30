@@ -4,27 +4,13 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   padding: 1rem;
-
-  .general-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    p {
-      padding: 0.5em;
-      span {
-        color: #00865e;
-      }
-    }
-  }
-  .social-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* background-color: ${props => props.theme.colors.reds[500]}; */
+  section {
+    margin-top: 0.5rem;
+    color: ${props => props.theme.body.description.foreground};
   }
 `
 export default StyledFooter

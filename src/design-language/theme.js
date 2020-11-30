@@ -20,6 +20,10 @@ const theme = {
         background: colors.whiteAlpha[200],
         foreground: colors.whiteAlpha[900],
       },
+      card: {
+        background: colors.blue[900],
+        foreground: colors.whiteAlpha[900],
+      },
     },
   },
 
@@ -37,7 +41,11 @@ const theme = {
       },
       icon: {
         background: colors.gray[100],
-        foreground: colors.gray[900],
+        foreground: colors.blackAlpha[900],
+      },
+      card: {
+        background: colors.blue[50],
+        foreground: colors.blackAlpha[900],
       },
     },
   },

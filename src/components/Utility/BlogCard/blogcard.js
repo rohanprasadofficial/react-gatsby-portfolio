@@ -19,6 +19,7 @@ export default function BlogCard() {
 }
 
 const StyledBlogCard = styled.div`
+  margin: 1rem auto;
   h3 {
     font-size: 1.3rem;
     color: ${props => props.theme.body.subtitle.foreground};

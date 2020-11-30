@@ -8,7 +8,7 @@ export default function Social() {
     <StyledSocial>
       <FaLinkedinIn />
       <AiOutlineGithub />
-      <FaFacebookF />
+      {/* <FaFacebookF /> */}
       <FaYoutube />
       <GrInstagram />
     </StyledSocial>
@@ -20,9 +20,17 @@ const StyledSocial = styled.section`
     height: 25px;
     width: 25px;
     cursor: pointer;
-    padding-right: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    transition: 1s ease;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgba(255, 255, 255, 0.16);
+    fill-opacity: 0.5;
+    color: ${props => props.theme.body.icon.foreground};
     &:hover {
-      color: greenyellow;
+      background-color: ${props => props.theme.body.icon.background};
     }
   }
 `

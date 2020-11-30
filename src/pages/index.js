@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout, SEO } from "../components"
+import { Footer, Header, Layout, SEO } from "../components"
 import GlobalStyle from "../design-language/styles/GlobalStyles"
 import styled, { ThemeProvider } from "styled-components"
 import designLanguage from "../design-language"
@@ -7,6 +7,7 @@ import Experience from "./experience"
 import { useState } from "react"
 import BlogCard from "../components/Utility/BlogCard/BlogCard"
 import Newsletter from "../components/Utility/newsletter"
+import Contact from "./contact"
 // const theme = { red: "#EB455A", blue: "#3793E0" }
 
 const IndexPage = () => {
@@ -15,15 +16,23 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={th ? designLanguage.dark : designLanguage.light}>
       <GlobalStyle />
+
       <button onClick={() => setTh(!th)}>Change theme</button>
+      <Header />
       <SEO title="Home" />
       <StyledHome>
         <h1>Hey, I'm Rohan</h1>
         <p>a coder who designs sometimes.</p>
         <h2>// recently published</h2>
         <BlogCard />
+        <BlogCard />
+
         <Newsletter />
       </StyledHome>
+
+      {/* <Contact /> */}
+
+      <Footer />
     </ThemeProvider>
   )
 }
@@ -32,9 +41,9 @@ const StyledHome = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 50%;
   margin: 1rem auto;
-  height: 70vh;
+  height: 75vh;
   h1 {
     font-size: 3rem;
     color: ${props => props.theme.body.title.foreground};
