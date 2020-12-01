@@ -28,6 +28,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        // Apply gatsby-mdx to both .mdx and .md files
+        extensions: [".mdx", ".md"],
+        defaultLayout: require.resolve("./src/components/blog-post-layout.js"),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog`,
+      },
+    },
+    `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

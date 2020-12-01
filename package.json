@@ -5,15 +5,21 @@
   "version": "0.1.0",
   "author": "Rohan Prasad <rohanpd.work@gmail.com>",
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.21",
+    "@mdx-js/react": "^1.6.21",
+    "@mdx-js/tag": "^0.20.3",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
+    "gatsby-mdx": "^1.0.0",
     "gatsby-plugin-manifest": "^2.6.1",
+    "gatsby-plugin-mdx": "^1.5.0",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-plugin-styled-components": "^3.5.0",
-    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-source-filesystem": "^2.6.1",
+    "gatsby-transformer-remark": "^2.11.1",
     "gatsby-transformer-sharp": "^2.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -26,7 +32,10 @@
     "prettier": "2.1.2"
   },
   "keywords": [
-    "Rohan Prasad", "rohan prasad", "Rohan", "Rohan Youtube"
+    "Rohan Prasad",
+    "rohan prasad",
+    "Rohan",
+    "Rohan Youtube"
   ],
   "license": "0BSD",
   "scripts": {
