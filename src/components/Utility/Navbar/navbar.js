@@ -23,10 +23,6 @@ export default function Navbar() {
           </li>
 
           <li>
-            <span>/</span> <Link to="/experience">experience</Link>
-          </li>
-
-          <li>
             <span>/</span>
             <Link to="/youtube">youtube</Link>
           </li>
@@ -48,7 +44,6 @@ const StyledNav = styled.nav`
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  width: 50%;
 
   .logo {
     color: ${props => props.theme.body.icon.foreground};

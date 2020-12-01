@@ -12,22 +12,20 @@ export default function Container({ children }) {
     <ThemeProvider theme={th ? designLanguage.dark : designLanguage.light}>
       <GlobalStyle />
       <button onClick={() => setTh(!th)}>Change theme</button>
-
       <Header />
 
-      <StyledContainer>{children}</StyledContainer>
-      <Footer />
+      <StyledContainer>
+        {children}
+        <Footer />
+      </StyledContainer>
     </ThemeProvider>
   )
 }
 
 const StyledContainer = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 40%;
+  display: block;
   margin: 1rem auto;
-  height: 75vh;
+  width: 60%;
   h1 {
     font-size: 3rem;
     color: ${props => props.theme.body.title.foreground};
@@ -41,6 +39,13 @@ const StyledContainer = styled.section`
   }
   h2 {
     font-size: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: ${props => props.theme.body.title.foreground};
+    transition: color 2s ease;
+  }
+  h3 {
+    font-size: 1.8rem;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     color: ${props => props.theme.body.title.foreground};

@@ -92,6 +92,7 @@ export default function Youtube() {
       </p>
       <h2>recent videos ;</h2>
       <YoutubeCard />
+      <YoutubeCard />
     </Container>
   )
 }
