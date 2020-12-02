@@ -1,24 +1,35 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
-function BlogIndex({ data }) {
+export default function Blog({ data }) {
   const { posts } = data.blog
-  console.log(posts)
+
   return (
     <div>
-      <p>Hello {posts[0].frontmatter.title}</p>
-      <p>ddrfgvfg</p>
-      {posts[0].excerpt}
+      <h1>My blog posts</h1>
+
+      {posts.map(post => (
+        <article key={post.id}>
+          <Link to={post.fields.slug}>
+            <h2>{post.frontmatter.title}</h2>
+          </Link>
+          <small>
+            {post.frontmatter.author}, {post.frontmatter.date}
+          </small>
+          <p>{post.excerpt}</p>
+        </article>
+      ))}
     </div>
   )
 }
-
-export default BlogIndex
 
 export const pageQuery = graphql`
   query MyQuery {
     blog: allMarkdownRemark {
       posts: nodes {
+        fields {
+          slug
+        }
         frontmatter {
           date(fromNow: true)
           title
