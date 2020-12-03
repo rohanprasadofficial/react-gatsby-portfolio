@@ -1,5 +1,4 @@
 import React from "react"
-import { AiFillHeart } from "react-icons/ai"
 
 import StyledFooter from "./footer.styles"
 import Social from "../Utility/Social/social"

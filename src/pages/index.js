@@ -1,6 +1,6 @@
 import React from "react"
 import { SEO } from "../components"
-import styled, { ThemeProvider } from "styled-components"
+import styled from "styled-components"
 import BlogCard from "../components/Utility/BlogCard/BlogCard"
 import Newsletter from "../components/Utility/newsletter"
 import Container from "../components/container"
@@ -14,7 +14,7 @@ const IndexPage = () => {
         <p>a coder who designs sometimes.</p>
 
         <h3>UI Engineer @Microsoft </h3>
-        <h3>// recently published</h3>
+        <h3>{"//"} recently published</h3>
         <BlogCard />
         <BlogCard />
 

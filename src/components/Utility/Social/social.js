@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa"
+import { FaYoutube, FaLinkedinIn } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
 import { AiOutlineGithub } from "react-icons/ai"
 export default function Social() {

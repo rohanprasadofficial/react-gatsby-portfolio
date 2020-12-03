@@ -1,14 +1,5 @@
 import React from "react"
-import {
-  FaBlog,
-  FaBlogger,
-  FaDochub,
-  FaExternalLinkAlt,
-  FaGithub,
-  FaLink,
-  FaSitemap,
-  FaUnlink,
-} from "react-icons/fa"
+import { FaGithub, FaLink, FaSitemap } from "react-icons/fa"
 import styled from "styled-components"
 
 export default function ProjectCard() {

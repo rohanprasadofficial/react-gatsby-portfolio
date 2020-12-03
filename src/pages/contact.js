@@ -1,12 +1,9 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
-import styled, { ThemeProvider } from "styled-components"
-import { Footer, Header, SEO } from "../components"
+import React from "react"
+import styled from "styled-components"
+import { SEO } from "../components"
 import Container from "../components/container"
-import designLanguage from "../design-language"
-
 export default function Contact() {
-  const [th, setTh] = useState(false)
   return (
     <Container>
       <SEO title="Contact" />

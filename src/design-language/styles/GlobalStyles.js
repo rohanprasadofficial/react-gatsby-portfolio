@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${props => props.theme.body.background};
-    transition: background-color 2s ease;
 
   }
   

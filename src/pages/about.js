@@ -3,9 +3,9 @@ import logo from "../images/gatsby-astronaut.png"
 export default function About() {
   return (
     <section>
-      <h1>//about</h1>
+      <h1>{"//"}about</h1>
 
-      <img src={logo} height="100" />
+      <img src={logo} height="100" alt="test-alt" />
 
       <p>
         Hey , thanks for reading by. This is me in a highly edit picture if mine
@@ -14,7 +14,7 @@ export default function About() {
       </p>
 
       <article>
-        <p>/// what the name signify </p>
+        <p>{"///"} what the name signify </p>
 
         <p>
           “Rohan” in sanskrit signifies “Ascending” and i am following it daily
@@ -23,7 +23,7 @@ export default function About() {
       </article>
 
       <article>
-        <p>/// where </p>
+        <p> {"///"} where </p>
 
         <p>
           I was born and brought in the beautiful place in “northern bengal”
@@ -33,7 +33,7 @@ export default function About() {
       </article>
 
       <article>
-        <p>/// some personal interest </p>
+        <p> {"///"} some personal interest </p>
 
         <p>
           I love bike rides and travelling solo. I would definetely start
@@ -42,7 +42,7 @@ export default function About() {
       </article>
 
       <article>
-        <p>/// the schooling story </p>
+        <p> {"///"} the schooling story </p>
 
         <p>
           i studied the secondary and sr. secondary from the same school. It
@@ -53,7 +53,7 @@ export default function About() {
       </article>
 
       <article>
-        <p>/// the college story </p>
+        <p> {"///"} the college story </p>
 
         <p>
           I love bike rides and travelling solo. I would definetely start
@@ -62,7 +62,7 @@ export default function About() {
       </article>
 
       <article>
-        <p>/// some personal interest </p>
+        <p> {"///"} some personal interest </p>
 
         <p>
           getting into Computer Science & Engineering which i had no idea how
@@ -79,8 +79,8 @@ export default function About() {
       </article>
 
       <article>
-        <p>/// the journey timeline so far </p>
-        //use svgr to create a component here
+        <p> {"///"} the journey timeline so far </p>
+        {/* //use svgr to create a component here */}
         <svg
           width="840"
           height="557"

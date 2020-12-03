@@ -1,12 +1,11 @@
 import React from "react"
-import { Header } from "../components"
+import Container from "../components/container"
 
 export default function StoryTelling() {
   return (
-    <section>
-      <Header />
+    <Container>
       <div>
-        <h1> // storytelling & filmmaking ;</h1>
+        <h1> {"//"} storytelling & filmmaking ;</h1>
         <h2>“ Those who tell the stories rule the world “</h2>
         <p>
           This quote which describes everything. I am deeply passionate about
@@ -20,12 +19,12 @@ export default function StoryTelling() {
           storytellers from the normal once. Someday you might see me creating
           great stories.
         </p>
-        <p> How it can help people i teach ? </p>{" "}
+        <p> How it can help people i teach ? </p>
         <p>
           I am polishing the skills and i am looking to combine my coding skills
           with filmmaking to bring something new out of box. stay tuned.
         </p>
       </div>
-    </section>
+    </Container>
   )
 }

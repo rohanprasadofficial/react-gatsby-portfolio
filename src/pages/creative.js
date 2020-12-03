@@ -8,10 +8,10 @@ export default function Creative() {
   return (
     <Container>
       <SEO title="Creative" />
-      <h1>// some dev projects</h1>
+      <h1>{"//"} some dev projects</h1>
       <ProjectCard />
 
-      <h1>// some design projects</h1>
+      <h1>{"//"} some design projects</h1>
       <ProjectCard />
     </Container>
   )
