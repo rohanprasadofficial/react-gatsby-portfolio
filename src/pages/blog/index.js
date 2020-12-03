@@ -1,11 +1,14 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Newsletter from "../../components/Utility/newsletter"
+import Container from "../../components/container"
 
 export default function Blog({ data }) {
   const { posts } = data.blog
 
   return (
-    <div>
+    <Container>
+      <Newsletter />
       <h1>My blog posts</h1>
 
       {posts.map(post => (
@@ -19,13 +22,15 @@ export default function Blog({ data }) {
           <p>{post.excerpt}</p>
         </article>
       ))}
-    </div>
+    </Container>
   )
 }
 
 export const pageQuery = graphql`
   query MyQuery {
-    blog: allMarkdownRemark {
+    blog: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       posts: nodes {
         fields {
           slug
