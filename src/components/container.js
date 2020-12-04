@@ -22,8 +22,8 @@ export default function Container({ children }) {
       theme={isDark === "dark" ? designLanguage.dark : designLanguage.light}
     >
       <GlobalStyle />
-      <button onClick={toggleTheme}>Change theme</button>
-      <Header />
+
+      <Header toggleTheme={toggleTheme} isDark={isDark} />
 
       <StyledContainer>
         {children}
@@ -34,9 +34,13 @@ export default function Container({ children }) {
 }
 
 const StyledContainer = styled.section`
-  display: block;
-  margin: 1rem auto;
-  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 768px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  padding: 0 2rem;
   h1 {
     font-size: 3rem;
     color: ${props => props.theme.body.title.foreground};
@@ -54,8 +58,6 @@ const StyledContainer = styled.section`
   }
   h3 {
     font-size: 1.8rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
     color: ${props => props.theme.body.title.foreground};
   }
 `

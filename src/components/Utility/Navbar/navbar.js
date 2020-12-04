@@ -1,38 +1,40 @@
 import { Link } from "gatsby"
 import React from "react"
 import { AiFillSound } from "react-icons/ai"
-import { FaMoon } from "react-icons/fa"
+import { FaMoon, FaSun } from "react-icons/fa"
 import styled from "styled-components"
 
-export default function Navbar() {
+export default function Navbar({ toggleTheme, isDark }) {
   return (
     <StyledNav>
       <div className="logo">
-        <FaMoon />
+        {isDark === "dark" ? (
+          <FaSun onClick={toggleTheme} />
+        ) : (
+          <FaMoon onClick={toggleTheme} />
+        )}
         <AiFillSound />
       </div>
       <div className="nav-items">
         <ul>
           <li>
-            <span>/</span> <Link to="/">home</Link>
+            <Link to="/">Home</Link>
           </li>
 
           <li>
-            <span>/</span>
-            <Link to="/creative">creative</Link>
+            <Link to="/creative">Creative</Link>
           </li>
 
           <li>
-            <span>/</span>
-            <Link to="/youtube">youtube</Link>
+            <Link to="/youtube">Youtube</Link>
           </li>
 
           <li>
-            <span>/</span> <Link to="/contact">contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
 
           <li>
-            <span>/</span> <Link to="/blog">blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </div>
@@ -44,9 +46,15 @@ const StyledNav = styled.nav`
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-
+  max-width: 992px;
+  padding: 1rem;
   .logo {
     color: ${props => props.theme.body.icon.foreground};
+    margin: auto 0;
+    svg {
+      padding-right: 1.5rem;
+      cursor: pointer;
+    }
   }
 
   li {
