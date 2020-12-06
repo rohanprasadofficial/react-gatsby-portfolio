@@ -90,9 +90,6 @@ export default function Youtube() {
         <span>Action : </span>
         my YouTube Channel
       </p>
-      <h2>recent videos ;</h2>
-      <YoutubeCard />
-      <YoutubeCard />
     </Container>
   )
 }

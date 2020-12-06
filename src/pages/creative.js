@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 import { SEO } from "../components"
 import Container from "../components/container"
 
@@ -8,10 +9,12 @@ export default function Creative() {
   return (
     <Container>
       <SEO title="Creative" />
-      <h1>{"//"} some dev projects</h1>
+      <h3>{"//"} some dev projects</h3>
+
       <ProjectCard />
 
-      <h1>{"//"} some design projects</h1>
+      <h3>{"//"} some design projects</h3>
+
       <ProjectCard />
     </Container>
   )

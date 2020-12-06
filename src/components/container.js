@@ -39,7 +39,6 @@ const StyledContainer = styled.section`
   max-width: 768px;
   flex-direction: column;
   justify-content: space-between;
-  height: 70vh;
   padding: 0 2rem;
   h1 {
     font-size: 3rem;

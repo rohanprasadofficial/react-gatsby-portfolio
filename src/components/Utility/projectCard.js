@@ -7,10 +7,10 @@ export default function ProjectCard() {
 
   return (
     <StyledCard>
-      <h3>
+      <h4>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
-      </h3>
+      </h4>
       <span>
         <FaLink style={s} />
       </span>
@@ -31,5 +31,13 @@ export default function ProjectCard() {
 }
 
 const StyledCard = styled.section`
-  max-width: 50rem;
+  max-width: 80%;
+  h4 {
+    font-size: 1.4rem;
+    color: ${props => props.theme.body.title.foreground};
+    margin: 1rem 0;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
 `

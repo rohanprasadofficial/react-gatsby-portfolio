@@ -15,7 +15,7 @@ function Footer() {
       </div> */}
 
       <Social />
-      <section>with love by Ro.</section>
+      <section>made with {"<"}3 by Rohan</section>
     </StyledFooter>
   )
 }
