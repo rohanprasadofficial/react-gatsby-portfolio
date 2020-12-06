@@ -1,7 +1,6 @@
 import React from "react"
 import { SEO } from "../components"
 import styled from "styled-components"
-import BlogCard from "../components/Utility/BlogCard/BlogCard"
 import Newsletter from "../components/Utility/newsletter"
 import Container from "../components/container"
 
