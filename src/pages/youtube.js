@@ -161,7 +161,7 @@ const StyledYoutube = styled.section`
       border-radius: 0.4rem;
       font-size: 1.2rem;
       margin-top: 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2 rem;
     }
   }
 `
