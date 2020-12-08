@@ -7,7 +7,7 @@ export default function BlogPost({ data }) {
 
   return (
     <Container>
-      <h1>{post.frontmatter.title}</h1>
+      <h3>{post.frontmatter.title}</h3>
       <small>{post.frontmatter.date}</small>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Container>

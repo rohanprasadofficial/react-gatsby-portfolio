@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
@@ -109,7 +110,7 @@ export default function Youtube() {
         </p>
         <p>
           <span>Need :</span>I feel that anyone could achieve more in life if
-          they have mentor guiding them .{" "}
+          they have mentor guiding them .
         </p>
 
         <p>
@@ -120,7 +121,14 @@ export default function Youtube() {
         <div className="ytsub">
           <img src={dp} alt="tst" />
           <h3>Rohan Prasad</h3>
-          <button>Subscribe</button>
+          <button>
+            <Link
+              to="https://www.youtube.com/rohanprasadofficial"
+              target="blank"
+            >
+              Subscribe
+            </Link>
+          </button>
         </div>
       </StyledYoutube>
     </Container>
@@ -146,20 +154,23 @@ const StyledYoutube = styled.section`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    a {
+      text-decoration: none;
+      color: white;
+    }
     img {
       border-radius: 50%;
       width: 15%;
       margin-bottom: 1rem;
     }
     button {
-      padding: 1rem 3rem;
+      padding: 0.5rem 2rem;
       background-color: black;
       color: white;
       cursor: pointer;
       border: none;
       border-radius: 0.4rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-top: 1rem;
       margin-bottom: 2 rem;
     }
