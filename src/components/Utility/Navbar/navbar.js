@@ -18,23 +18,23 @@ export default function Navbar({ toggleTheme, isDark }) {
       <div className="nav-items">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">home</Link>
+          </li>
+
+          {/* <li>
+            <Link to="/creative">creative</Link>
+          </li> */}
+
+          <li>
+            <Link to="/youtube">youtube</Link>
           </li>
 
           <li>
-            <Link to="/creative">Creative</Link>
+            <Link to="/contact">contact</Link>
           </li>
 
           <li>
-            <Link to="/youtube">Youtube</Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
-          <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog">blog</Link>
           </li>
         </ul>
       </div>

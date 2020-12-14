@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
@@ -9,14 +10,29 @@ export default function Newsletter() {
         Random thoughts about design systems , react , angular , design and many
         more.
       </p>
-      <div>
+      <form
+        action="https://buttondown.email/api/emails/embed-subscribe/rohanprasadofficial"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.email/rohanprasadofficial', 'popupwindow')"
+        class="embeddable-buttondown-form"
+      >
         <input
-          aria-label="input"
           type="email"
-          placeholder="rohan@example.com"
-        />
-        <button>subscribe</button>
-      </div>
+          name="email"
+          id="bd-email"
+          placeholder="email"
+        ></input>
+        <input type="hidden" value="1" name="embed"></input>
+        <button type="submit" value="Subscribe">
+          Subscribe
+        </button>
+        <p>
+          <Link href="https://buttondown.email" target="_blank">
+            Powered by Buttondown.
+          </Link>
+        </p>
+      </form>
     </StyledNewsletter>
   )
 }
@@ -27,6 +43,7 @@ const StyledNewsletter = styled.div`
   max-width: 40rem;
   padding: 1.5rem 2rem;
   border-radius: 0.4rem;
+
   h3 {
     color: ${props => props.theme.body.title.foreground};
     font-size: 1.5rem;
@@ -43,6 +60,7 @@ const StyledNewsletter = styled.div`
     width: 40%;
     border: none;
     padding-left: 1rem;
+    margin-bottom: 0.3rem;
   }
   button {
     padding: 0.5rem 1rem;
@@ -54,5 +72,10 @@ const StyledNewsletter = styled.div`
     cursor: pointer;
     border: none;
     border-radius: 0.4rem;
+  }
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.body.description.foreground};
+    font-size: 0.8rem;
   }
 `

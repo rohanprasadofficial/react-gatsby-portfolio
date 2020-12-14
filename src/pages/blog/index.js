@@ -9,13 +9,14 @@ export default function Blog({ data }) {
 
   return (
     <Container>
-      <Newsletter />
       <StyledBlog>
         <h3>My blog posts</h3>
-        {posts.map(post => (
+        {posts.map((post, index) => (
           <article key={post.id}>
             <Link to={post.fields.slug}>
-              <h4>{post.frontmatter.title}</h4>
+              <h4>
+                {posts.length - index} . {post.frontmatter.title}
+              </h4>
             </Link>
             <small>
               {post.frontmatter.author}, {post.frontmatter.date}
@@ -24,6 +25,7 @@ export default function Blog({ data }) {
           </article>
         ))}
       </StyledBlog>
+      <Newsletter />
     </Container>
   )
 }

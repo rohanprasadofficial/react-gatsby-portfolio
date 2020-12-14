@@ -3,20 +3,41 @@ import styled from "styled-components"
 import { FaYoutube, FaLinkedinIn } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
 import { AiOutlineGithub } from "react-icons/ai"
+import { Link } from "gatsby"
+
+const sociallinks = {
+  facebook: "https://www.facebook.com/rohanprasadofficial",
+  twitter: "https://twitter.com/rohanpdofficial",
+  instagram: "https://www.instagram.com/rohanprasadofficial/",
+  linkedin: "https://www.linkedin.com/in/rohanprasadofficial/",
+  github: "https://github.com/rohanprasadofficial",
+  youtube: "https://www.youtube.com/rohanprasadofficial",
+
+  target: "blank",
+}
+
 export default function Social() {
   return (
     <StyledSocial>
-      <FaLinkedinIn className="linkedin" />
-      <AiOutlineGithub className="github" />
-      {/* <FaFacebookF /> */}
-      <FaYoutube className="youtube" />
-      <GrInstagram className="instagram" />
+      <Link to={sociallinks.linkedin} target={sociallinks.target}>
+        <FaLinkedinIn className="linkedin" />
+      </Link>
+      <Link to={sociallinks.github} target={sociallinks.target}>
+        <AiOutlineGithub className="github" />
+      </Link>
+      <Link to={sociallinks.youtube} target={sociallinks.target}>
+        <FaYoutube className="youtube" />
+      </Link>
+      <Link to={sociallinks.instagram} target={sociallinks.target}>
+        <GrInstagram className="instagram" />
+      </Link>
     </StyledSocial>
   )
 }
 
 const StyledSocial = styled.section`
   svg {
+    color: ${props => props.theme.body.icon.foreground};
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -27,7 +48,6 @@ const StyledSocial = styled.section`
     border-style: solid;
     border-width: 0;
     border-color: rgba(255, 255, 255, 0.16);
-    fill-opacity: 0.5;
   }
   .linkedin :hover {
     color: #0e76a8;

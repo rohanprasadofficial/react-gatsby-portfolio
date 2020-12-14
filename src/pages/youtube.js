@@ -123,7 +123,7 @@ export default function Youtube() {
           <h3>Rohan Prasad</h3>
           <button>
             <Link
-              to="https://www.youtube.com/rohanprasadofficial"
+              to="https://www.youtube.com/rohanprasadofficial?sub_confirmation=1"
               target="blank"
             >
               Subscribe
@@ -136,9 +136,12 @@ export default function Youtube() {
 }
 
 const StyledYoutube = styled.section`
+  h2 {
+    margin-top: 0;
+  }
   .plates {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     svg {
       width: 20%;
     }
@@ -156,7 +159,7 @@ const StyledYoutube = styled.section`
     align-items: center;
     a {
       text-decoration: none;
-      color: white;
+      color: ${props => props.theme.body.button.foreground};
     }
     img {
       border-radius: 50%;
@@ -165,8 +168,8 @@ const StyledYoutube = styled.section`
     }
     button {
       padding: 0.5rem 2rem;
-      background-color: black;
-      color: white;
+      background-color: ${props => props.theme.body.button.background};
+      color: ${props => props.theme.body.button.foreground};
       cursor: pointer;
       border: none;
       border-radius: 0.4rem;

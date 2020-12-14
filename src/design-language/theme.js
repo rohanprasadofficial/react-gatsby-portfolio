@@ -6,7 +6,7 @@ import { fontSizes, fontWeights } from "./typography"
 const theme = {
   dark: {
     body: {
-      background: colors.gray[900],
+      background: colors.black,
       title: {
         foreground: colors.white,
       },
@@ -23,6 +23,10 @@ const theme = {
       card: {
         background: colors.blue[900],
         foreground: colors.whiteAlpha[900],
+      },
+      button: {
+        background: colors.white,
+        foreground: colors.black,
       },
     },
   },
@@ -46,6 +50,10 @@ const theme = {
       card: {
         background: colors.blue[50],
         foreground: colors.blackAlpha[900],
+      },
+      button: {
+        background: colors.black,
+        foreground: colors.white,
       },
     },
   },
