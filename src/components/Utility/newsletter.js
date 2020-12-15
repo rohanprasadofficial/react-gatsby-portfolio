@@ -14,8 +14,8 @@ export default function Newsletter() {
         action="https://buttondown.email/api/emails/embed-subscribe/rohanprasadofficial"
         method="post"
         target="popupwindow"
-        onsubmit="window.open('https://buttondown.email/rohanprasadofficial', 'popupwindow')"
-        class="embeddable-buttondown-form"
+        onSubmit="window.open('https://buttondown.email/rohanprasadofficial', 'popupwindow')"
+        className="embeddable-buttondown-form"
       >
         <input
           type="email"

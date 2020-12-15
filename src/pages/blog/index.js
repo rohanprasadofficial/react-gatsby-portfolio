@@ -3,15 +3,15 @@ import { graphql, Link } from "gatsby"
 import Newsletter from "../../components/Utility/newsletter"
 import Container from "../../components/container"
 import styled from "styled-components"
-
+import { SEO } from "../../components/index"
 export default function Blog({ data }) {
   const { posts } = data.blog
 
   return (
     <Container>
-      <StyledBlog>
-        <Newsletter />
+      <SEO title="Blog" />
 
+      <StyledBlog>
         <h3>My blog posts</h3>
         {posts.map((post, index) => (
           <article key={post.id}>
@@ -27,6 +27,7 @@ export default function Blog({ data }) {
           </article>
         ))}
       </StyledBlog>
+      <Newsletter />
     </Container>
   )
 }

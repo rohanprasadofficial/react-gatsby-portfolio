@@ -1,18 +1,23 @@
 import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
-import logo from "../images/dp.jpg"
+import logo from "../images/dp (2).jpg"
 export default function About() {
   return (
     <Container>
       <StyledAbout>
-        <h1>{"//"}about</h1>
+        <h2>about</h2>
 
         <img
           src={logo}
           height="50"
           width="50"
-          style={{ borderRadius: "50%" }}
+          style={{
+            borderRadius: "50%",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
           alt="test-alt"
         />
 
@@ -23,8 +28,9 @@ export default function About() {
         </p>
 
         <article>
-          <h3>{"///"} what the name signify </h3>
-
+          <strong>
+            <p>what the name signify ? </p>
+          </strong>
           <p>
             “Rohan” in sanskrit signifies “Ascending” and i am following it
             daily by learning and evolving myself.
@@ -32,8 +38,9 @@ export default function About() {
         </article>
 
         <article>
-          <h3> {"///"} where </h3>
-
+          <strong>
+            <p>where ?</p>
+          </strong>
           <p>
             I was born and brought in the beautiful place in “northern bengal”
             based out in “India.” if you ever visit my place we might have a tea
@@ -42,8 +49,9 @@ export default function About() {
         </article>
 
         <article>
-          <h3> {"///"} some personal interest </h3>
-
+          <strong>
+            <p>some personal interest </p>
+          </strong>
           <p>
             I love bike rides and travelling solo. I would definetely start
             travelling around and making vlogs & stories .
@@ -51,7 +59,9 @@ export default function About() {
         </article>
 
         <article>
-          <h3> {"///"} the schooling story </h3>
+          <strong>
+            <p>the schooling story </p>
+          </strong>
 
           <p>
             i studied the secondary and sr. secondary from the same school. It
@@ -62,7 +72,9 @@ export default function About() {
         </article>
 
         <article>
-          <h3> {"///"} the college story </h3>
+          <strong>
+            <p>the college story </p>
+          </strong>
 
           <p>
             I love bike rides and travelling solo. I would definetely start
@@ -71,7 +83,9 @@ export default function About() {
         </article>
 
         <article>
-          <h3> {"///"} some personal interest </h3>
+          <strong>
+            <p>some personal interest </p>
+          </strong>
 
           <p>
             getting into Computer Science & Engineering which i had no idea how
@@ -88,11 +102,11 @@ export default function About() {
         </article>
 
         <article>
-          <h3> {"///"} the journey timeline so far </h3>
+          <h3>the journey timeline so far </h3>
           {/* //use svgr to create a component here */}
           <svg
-            width="840"
-            height="557"
+            width="700"
+            height="700"
             viewBox="0 0 840 557"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +154,7 @@ export default function About() {
 
 const StyledAbout = styled.section`
   h2 {
-    margin-top: 0;
+    margin-bottom: 2rem;
   }
   p {
     margin: 1rem 0;

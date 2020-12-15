@@ -30,7 +30,7 @@ export default function Contact() {
       <SEO title="Contact" />
 
       <StyledContact>
-        <h1>let’s collaborate</h1>
+        <h2>let’s collaborate</h2>
         <p>
           For anything , please reach out to :{" "}
           <span>rohanpd.work@gmail.com </span>{" "}
@@ -73,7 +73,7 @@ export default function Contact() {
           ></textarea>
           <br />
           {status === "SUCCESS" ? (
-            <p>Thanks! I will get back to soon.</p>
+            <p>Thanks! I will get back to you soon.</p>
           ) : (
             <button type="submit">Submit</button>
           )}
@@ -85,8 +85,7 @@ export default function Contact() {
 }
 
 const StyledContact = styled.section`
-  h1 {
-    margin: 1rem 0;
+  h2 {
     margin-bottom: 1rem;
   }
   h3 {
