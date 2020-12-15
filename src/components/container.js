@@ -36,27 +36,28 @@ export default function Container({ children }) {
 const StyledContainer = styled.section`
   display: flex;
   margin: 0 auto;
-  max-width: 768px;
+  max-width: ${props => props.theme.breakpoints[1]};
   flex-direction: column;
   justify-content: space-between;
   padding: 0 2rem;
   h1 {
-    font-size: 3rem;
+    font-size: ${props => props.theme.fontSizes[13]};
     color: ${props => props.theme.body.title.foreground};
-    margin: 1rem 0;
   }
   p {
     color: ${props => props.theme.body.description.foreground};
-    font-size: 1rem;
   }
   h2 {
-    font-size: 2.2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: ${props => props.theme.fontSizes[10]};
+
     color: ${props => props.theme.body.title.foreground};
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: ${props => props.theme.fontSizes[7]};
+    color: ${props => props.theme.body.title.foreground};
+  }
+  h4 {
+    font-size: ${props => props.theme.fontSizes[6]};
     color: ${props => props.theme.body.title.foreground};
   }
 `

@@ -21,10 +21,15 @@ const IndexPage = () => {
 }
 
 const StyledHome = styled.section`
+  h1 {
+    margin: 1rem 0;
+  }
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
   h4 {
     margin-top: 1rem;
-    font-size: 1.8rem;
-    color: ${props => props.theme.body.title.foreground};
   }
 `
 

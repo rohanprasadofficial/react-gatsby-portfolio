@@ -10,6 +10,8 @@ export default function Blog({ data }) {
   return (
     <Container>
       <StyledBlog>
+        <Newsletter />
+
         <h3>My blog posts</h3>
         {posts.map((post, index) => (
           <article key={post.id}>
@@ -25,7 +27,6 @@ export default function Blog({ data }) {
           </article>
         ))}
       </StyledBlog>
-      <Newsletter />
     </Container>
   )
 }

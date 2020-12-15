@@ -2,6 +2,7 @@ import { colors } from "./color"
 import { fontSizes, fontWeights } from "./typography"
 
 // Light or Dark theme options
+const breakpoints = ["576px", "768px", "992px"]
 
 const theme = {
   dark: {
@@ -29,6 +30,10 @@ const theme = {
         foreground: colors.black,
       },
     },
+    breakpoints,
+    colors,
+    fontSizes,
+    fontWeights,
   },
 
   light: {
@@ -56,11 +61,11 @@ const theme = {
         foreground: colors.white,
       },
     },
+    breakpoints,
+    colors,
+    fontSizes,
+    fontWeights,
   },
-
-  colors,
-  fontSizes,
-  fontWeights,
 
   space: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64],
   sizes: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64],
@@ -69,7 +74,6 @@ const theme = {
   speeds: [0, "75ms", "100ms", "150ms", "200ms", "300ms", "500ms"],
 
   // mobile first
-  breakpoints: ["576px", "768px", "992px"],
 
   radii: {
     small: 2,

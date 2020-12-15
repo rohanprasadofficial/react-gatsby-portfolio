@@ -21,7 +21,7 @@ export default function Newsletter() {
           type="email"
           name="email"
           id="bd-email"
-          placeholder="email"
+          placeholder="rohan@example.com"
         ></input>
         <input type="hidden" value="1" name="embed"></input>
         <button type="submit" value="Subscribe">
