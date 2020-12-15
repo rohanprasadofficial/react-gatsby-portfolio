@@ -43,9 +43,6 @@ const StyledBlog = styled.section`
   small {
     color: ${props => props.theme.body.description.foreground};
   }
-  p {
-    padding: 0.5rem 0;
-  }
 `
 
 export const pageQuery = graphql`

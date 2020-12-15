@@ -13,9 +13,8 @@ function Footer() {
         </p>
         <p>It’s 3 PM in Rohan’s City.</p>
       </div> */}
-
       <Social />
-      <section>made with {"<"}3 by Rohan</section>
+      made with love
     </StyledFooter>
   )
 }

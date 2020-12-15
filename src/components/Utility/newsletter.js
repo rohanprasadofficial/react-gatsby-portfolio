@@ -39,36 +39,24 @@ export default function Newsletter() {
 
 const StyledNewsletter = styled.div`
   margin: 2rem 0;
-  background-color: ${props => props.theme.body.card.background};
+  border: 1px solid ${props => props.theme.body.title.foreground};
   max-width: 40rem;
   padding: 1.5rem 2rem;
   border-radius: 0.4rem;
+  /* background-color: #051b1d; */
 
-  h3 {
-    color: ${props => props.theme.body.title.foreground};
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  p {
-    margin-bottom: 1rem;
-    color: ${props => props.theme.body.description.foreground};
-  }
   input {
     padding: 0.5rem;
     margin-right: 1rem;
     border-radius: 0.4rem;
     width: 40%;
-    border: none;
     padding-left: 1rem;
-    margin-bottom: 0.3rem;
+    border: 1px solid ${props => props.theme.body.title.foreground};
   }
   button {
     padding: 0.5rem 1rem;
-    /* background-color: ${props => props.theme.body.title.foreground};
-    color: ${props => props.theme.body.background}; */
-
-    background-color: black;
-    color: white;
+    background-color: ${props => props.theme.body.title.foreground};
+    color: ${props => props.theme.body.background};
     cursor: pointer;
     border: none;
     border-radius: 0.4rem;
@@ -77,5 +65,8 @@ const StyledNewsletter = styled.div`
     text-decoration: none;
     color: ${props => props.theme.body.description.foreground};
     font-size: 0.8rem;
+  }
+  p {
+    padding: 0.5rem 0;
   }
 `

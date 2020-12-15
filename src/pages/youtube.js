@@ -2,13 +2,15 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
-import dp from "../images/dp.jpg"
+import dp from "../images/dp (2).jpg"
+import { SEO } from "../components"
+
 export default function Youtube() {
   return (
     <Container>
+      <SEO title="Youtube" />
       <StyledYoutube>
-        <h2>the youtube fairly tail ;</h2>
-
+        <h2>the youtube fairly tail</h2>
         <div className="plates">
           <svg
             width="189"
@@ -71,23 +73,22 @@ export default function Youtube() {
             />
           </svg>
         </div>
-        <h2>concept ;</h2>
+        <h3>concept</h3>
         <p>
           - I was always passionate about teaching and being a mentor to someone
           , seeing someone to acheive something great in life. ”The best ever
-          gift to teacher”{" "}
+          gift to teacher”.
         </p>
 
-        <strong>
-          <p>How it started ?</p>
-        </strong>
+        <h3>how it started ?</h3>
+
         <p>
           - I have been always a forward looking person to the new challenges
           and try out new things to learn and grow. Back to school and colleges
           where i used grasp the concept early and boom teach same things to my
           friends in some easier and friendly manner where they understood
           better. So everyday after exam , my friends used to tell me : “Bhai
-          tere padhaya kaam aa gaya” (In Eng : “You teachings workout”) .
+          tere padhaya kaam aa gaya” (In Eng : “You teachings worked out”) .
         </p>
         <p>
           Then i move into the a coding club as well in my college where i used
@@ -109,7 +110,7 @@ export default function Youtube() {
           <span>Passion : </span>I am passionate about teaching and mentoring.
         </p>
         <p>
-          <span>Need :</span>I feel that anyone could achieve more in life if
+          <span>Need : </span>I feel that anyone could achieve more in life if
           they have mentor guiding them .
         </p>
 
@@ -121,6 +122,7 @@ export default function Youtube() {
         <div className="ytsub">
           <img src={dp} alt="tst" />
           <h3>Rohan Prasad</h3>
+          <p>tech videos & vlogs</p>
           <button>
             <Link
               to="https://www.youtube.com/rohanprasadofficial?sub_confirmation=1"
@@ -136,18 +138,20 @@ export default function Youtube() {
 }
 
 const StyledYoutube = styled.section`
-  h2 {
-    margin-top: 0;
+  h3 {
+    margin-bottom: 1rem;
   }
   .plates {
     display: flex;
     justify-content: space-around;
+    margin: 2.75rem 0;
     svg {
       width: 20%;
     }
   }
   p {
     margin: 1rem 0;
+
     span {
       color: #00bfa5;
     }
@@ -157,6 +161,17 @@ const StyledYoutube = styled.section`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 2rem 0;
+    border: 1px solid ${props => props.theme.body.title.foreground};
+    max-width: 40rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.4rem;
+    h3 {
+      margin-bottom: 0;
+    }
+    /* p {
+      margin-bottom: 0.25rem;
+    } */
     a {
       text-decoration: none;
       color: ${props => props.theme.body.button.foreground};
@@ -165,6 +180,7 @@ const StyledYoutube = styled.section`
       border-radius: 50%;
       width: 15%;
       margin-bottom: 1rem;
+      object-fit: fill;
     }
     button {
       padding: 0.5rem 2rem;
@@ -172,9 +188,9 @@ const StyledYoutube = styled.section`
       color: ${props => props.theme.body.button.foreground};
       cursor: pointer;
       border: none;
-      border-radius: 0.4rem;
+      border-radius: 0.5rem;
       font-size: 1rem;
-      margin-top: 1rem;
+
       margin-bottom: 2 rem;
     }
   }

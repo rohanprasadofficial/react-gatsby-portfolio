@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { ThemeProvider } from "styled-components"
 import designLanguage from "../design-language"
-import { Footer } from "./Footer"
 import { Header } from "./Header"
 import GlobalStyle from "../design-language/styles/GlobalStyles"
 export default function Container({ children }) {
@@ -25,10 +24,8 @@ export default function Container({ children }) {
 
       <Header toggleTheme={toggleTheme} isDark={isDark} />
 
-      <StyledContainer>
-        {children}
-        <Footer />
-      </StyledContainer>
+      <StyledContainer>{children}</StyledContainer>
+      {/* <Footer /> */}
     </ThemeProvider>
   )
 }
@@ -38,7 +35,7 @@ const StyledContainer = styled.section`
   margin: 0 auto;
   max-width: ${props => props.theme.breakpoints[1]};
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 2rem;
   h1 {
     font-size: ${props => props.theme.fontSizes[13]};
@@ -46,6 +43,7 @@ const StyledContainer = styled.section`
   }
   p {
     color: ${props => props.theme.body.description.foreground};
+    line-height: 1.6rem;
   }
   h2 {
     font-size: ${props => props.theme.fontSizes[10]};

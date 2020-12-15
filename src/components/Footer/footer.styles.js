@@ -5,9 +5,7 @@ import styled from "styled-components"
 const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  align-items: left;
   section {
     margin-top: 0.5rem;
     color: ${props => props.theme.body.description.foreground};
