@@ -1,9 +1,30 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { SEO } from "../components"
 import Container from "../components/container"
 export default function Contact() {
+  const [status, setStatus] = useState("")
+
+  const submitForm = ev => {
+    ev.preventDefault()
+    const form = ev.target
+    const data = new FormData(form)
+    const xhr = new XMLHttpRequest()
+    xhr.open(form.method, form.action)
+    xhr.setRequestHeader("Accept", "application/json")
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return
+      if (xhr.status === 200) {
+        form.reset()
+        setStatus("SUCCESS")
+      } else {
+        setStatus("ERROR")
+      }
+    }
+    xhr.send(data)
+  }
+
   return (
     <Container>
       <SEO title="Contact" />
@@ -22,12 +43,28 @@ export default function Contact() {
             </Link>
           </span>
         </p>
-        OR
-        <form action="https://formspree.io/f/{form_id}" method="post">
+        <h3>OR</h3>
+        <form
+          onSubmit={submitForm}
+          action="https://formspree.io/f/mqkgyjek"
+          method="POST"
+        >
           <label for="name">Your Name</label> <br />
-          <input name="Name" id="name" type="text" /> <br />
+          <input
+            name="Name"
+            id="name"
+            type="text"
+            placeholder="Rohan Prasad"
+          />{" "}
+          <br />
           <label for="email">Your Email</label> <br />
-          <input name="Email" id="email" type="email" /> <br />
+          <input
+            name="Email"
+            id="email"
+            type="email"
+            placeholder="rohan@example.com"
+          />{" "}
+          <br />
           <label for="description">Description</label> <br />
           <textarea
             name="description"
@@ -35,7 +72,12 @@ export default function Contact() {
             placeholder="Your thoughts"
           ></textarea>
           <br />
-          <button type="submit">Submit</button>
+          {status === "SUCCESS" ? (
+            <p>Thanks! I will get back to soon.</p>
+          ) : (
+            <button type="submit">Submit</button>
+          )}
+          {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
       </StyledContact>
     </Container>
@@ -43,17 +85,13 @@ export default function Contact() {
 }
 
 const StyledContact = styled.section`
-  a {
-    color: #00bfa5;
-  }
   h1 {
     margin: 1rem 0;
     margin-bottom: 1rem;
   }
-  p {
-    margin-bottom: 1rem;
+  h3 {
+    margin: 2rem 0;
   }
-
   input,
   textarea {
     padding: 0.5rem;
@@ -64,12 +102,15 @@ const StyledContact = styled.section`
     margin-bottom: 1rem;
     margin-top: 0.5rem;
   }
+  label {
+    color: ${props => props.theme.body.subtitle.foreground};
+  }
 
   textarea {
     width: 70%;
   }
   button {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 3rem;
     background-color: ${props => props.theme.body.title.foreground};
     color: ${props => props.theme.body.background};
     cursor: pointer;
@@ -78,10 +119,6 @@ const StyledContact = styled.section`
   }
   a {
     text-decoration: none;
-    color: ${props => props.theme.body.description.foreground};
-    font-size: 0.8rem;
-  }
-  p {
-    padding: 0.5rem 0;
+    color: #00bfa5;
   }
 `
