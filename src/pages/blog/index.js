@@ -12,13 +12,11 @@ export default function Blog({ data }) {
       <SEO title="Blog" />
 
       <StyledBlog>
-        <h3>My blog posts</h3>
+        <h2>My blog posts</h2>
         {posts.map((post, index) => (
           <article key={post.id}>
             <Link to={post.fields.slug}>
-              <h4>
-                {posts.length - index} . {post.frontmatter.title}
-              </h4>
+              <h4>{post.frontmatter.title}</h4>
             </Link>
             <small>
               {post.frontmatter.author}, {post.frontmatter.date}
