@@ -21,9 +21,9 @@ export default function Navbar({ toggleTheme, isDark }) {
             <Link to="/">home</Link>
           </li>
 
-          {/* <li>
-            <Link to="/creative">creative</Link>
-          </li> */}
+          <li>
+            <Link to="/about">about</Link>
+          </li>
 
           <li>
             <Link to="/youtube">youtube</Link>

@@ -30,7 +30,8 @@ const radii = {
 const theme = {
   dark: {
     body: {
-      background: "#151515",
+      background: "#1c1c1e",
+      highlight: "#4ac3bf",
       title: {
         foreground: colors.white,
       },
@@ -66,6 +67,8 @@ const theme = {
   light: {
     body: {
       background: colors.white,
+      highlight: "#4ac3bf",
+
       title: {
         foreground: colors.black,
       },

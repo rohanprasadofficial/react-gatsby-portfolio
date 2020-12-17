@@ -4,6 +4,9 @@ import styled from "styled-components"
 import Container from "../components/container"
 import { SEO } from "../components/"
 export default function Experience() {
+  /* I have done this intentionally the old school and not having state
+   based tab thing because i want you to make PR on this with great class based code.*/
+
   const showDesc = e => {
     let d = document.querySelectorAll(".orglist__item--title")
     d.forEach(e => {
@@ -36,7 +39,7 @@ export default function Experience() {
         <br />
         <p>
           I have worked with various people across various timezones & have been
-          a great experiences with the mixture pros & cons . ↗
+          a great experiences with the mixture pros & cons .
         </p>
 
         <div className="orgcontainer">
@@ -89,7 +92,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="orgdesc " data-target="1">
-            <h3>ux developer - consultant</h3>
+            <h3>UX Developer - Consultant</h3>
             <p>
               <strong> Hyderabad , India </strong>
             </p>
@@ -155,8 +158,8 @@ export default function Experience() {
             <ul>
               <li>- worked on main Android App and Backend Features. </li>
               <li>
-                - wrote microservices which can integreted to different
-                platforms.
+                - wrote microservices which can be integreted to different
+                platforms & services to have a central platform.
               </li>
               <li>- converted the design into Apps & Websites.</li>
               <li>
@@ -203,7 +206,9 @@ const StyledDiv = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 1.25rem;
-    margin-top: 2rem;
+    justify-content: center;
+    border-left: 1px solid ${props => props.theme.body.button.background};
+    margin: 3.25rem 0;
     ul {
       padding: 0;
       li {
@@ -222,6 +227,8 @@ const StyledDiv = styled.div`
         margin: auto 0;
       }
       &--title {
+        cursor: pointer;
+
         width: 9rem;
         padding: 0.75rem 0rem;
         text-align: center;
