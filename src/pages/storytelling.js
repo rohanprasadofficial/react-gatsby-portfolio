@@ -15,7 +15,7 @@ export default function StoryTelling() {
             storytelling and frame stories that can change things from better to
             best.
           </p>
-          <h3>Concept</h3>
+          <h3>concept</h3>
           <p>
             I will start filmmaking soon , i am learning the concepts and how
             great people do it. There is something that differentiaite

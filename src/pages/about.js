@@ -3,10 +3,12 @@ import styled from "styled-components"
 import Container from "../components/container"
 import Timeline from "../images/assets/timeline"
 import logo from "../images/dp (2).jpg"
-
+import { SEO } from "../components"
 export default function About() {
   return (
     <Container>
+      <SEO title="About" />
+
       <StyledAbout>
         <h2>about</h2>
         <div style={{ display: "flex", justifyContent: "center" }}>
