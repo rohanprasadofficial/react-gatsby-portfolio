@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
-  body,h1,h2,h3,h4,h5,h6 ,p ,a ,li{
+  body,h1,h2,h3,h4,h5,h6 ,p ,a ,li , ul{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,9 +15,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.body.background};
   }
 
-}
-
-  
 `
 
 export default GlobalStyle

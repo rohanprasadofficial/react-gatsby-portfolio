@@ -24,7 +24,7 @@ export default function Container({ children }) {
 
       <Header toggleTheme={toggleTheme} isDark={isDark} />
 
-      <StyledContainer>{children}</StyledContainer>
+      <StyledContainer id="container">{children}</StyledContainer>
       {/* <Footer /> */}
     </ThemeProvider>
   )
