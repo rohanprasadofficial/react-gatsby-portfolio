@@ -5,13 +5,19 @@ import designLanguage from "../design-language"
 import { Header } from "./Header"
 import GlobalStyle from "../design-language/styles/GlobalStyles"
 export default function Container({ children }) {
-  let [isDark, setIsDark] = useState(localStorage.getItem("rp/theme"))
+  let [isDark, setIsDark] = useState(
+    typeof window !== "undefined" ? localStorage.getItem("rp/theme") : null
+  )
   const toggleTheme = () => {
     if (isDark === "dark") {
-      localStorage.setItem("rp/theme", "light")
+      typeof window !== "undefined"
+        ? localStorage.setItem("rp/theme", "light")
+        : null
       setIsDark("light")
     } else {
-      localStorage.setItem("rp/theme", "dark")
+      typeof window !== "undefined"
+        ? localStorage.setItem("rp/theme", "dark")
+        : null
       setIsDark("dark")
     }
   }
