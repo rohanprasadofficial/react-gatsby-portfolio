@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
 import Timeline from "../images/assets/timeline"
-import logo from "../images/dp (2).jpg"
+import logo from "../images/RohanPrasad.jpg"
 import { SEO } from "../components"
 export default function About() {
   return (
@@ -126,6 +126,17 @@ const StyledAbout = styled.section`
     margin: 1rem 0;
     span {
       color: #00bfa5;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      height: 150px;
+      width: 150px;
+    }
+    svg {
+      width: 420px;
+      margin-top: -100px;
     }
   }
 `

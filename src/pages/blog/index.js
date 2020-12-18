@@ -42,6 +42,9 @@ const StyledBlog = styled.section`
   small {
     color: ${props => props.theme.body.description.foreground};
   }
+  p {
+    margin: 0 auto;
+  }
 `
 
 export const pageQuery = graphql`

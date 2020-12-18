@@ -69,4 +69,14 @@ const StyledNewsletter = styled.div`
   p {
     padding: 0.5rem 0;
   }
+
+  @media only screen and (max-width: 768px) {
+    input {
+      width: 70%;
+    }
+    button {
+      display: block;
+      margin-top: 0.5rem;
+    }
+  }
 `

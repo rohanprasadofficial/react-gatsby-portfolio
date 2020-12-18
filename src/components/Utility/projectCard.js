@@ -38,6 +38,7 @@ const StyledCard = styled.section`
     align-items: center;
     flex-direction: column;
     margin-left: 1.5rem;
+    padding-left: 1.5rem;
     p {
       margin-top: 1rem;
     }

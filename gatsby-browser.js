@@ -4,9 +4,19 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
-export const onInitialClientRender = () => {
-  setTimeout(function () {
-    document.getElementById("___loader").style.display = "none"
-  }, 1000)
+// // You can delete this file if you're not using it
+// export const onInitialClientRender = () => {
+//   setTimeout(function () {
+//     document.getElementById("___loader").style.display = "none"
+//   }, 1000)
+// }
+
+export const onServiceWorkerUpdateReady = () => {
+  const answer = window.confirm(
+    `This application has been updated. ` +
+      `Reload to display the latest version?`
+  )
+  if (answer === true) {
+    window.location.reload()
+  }
 }
