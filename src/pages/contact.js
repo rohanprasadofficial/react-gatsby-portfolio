@@ -120,4 +120,13 @@ const StyledContact = styled.section`
     text-decoration: none;
     color: #00bfa5;
   }
+
+  @media only screen and (max-width: 480px) {
+    input {
+      width: 70%;
+    }
+    textarea {
+      width: 90%;
+    }
+  }
 `

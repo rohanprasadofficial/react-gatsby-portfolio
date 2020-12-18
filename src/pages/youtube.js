@@ -194,4 +194,20 @@ const StyledYoutube = styled.section`
       margin-bottom: 2 rem;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .plates {
+      display: flex;
+      justify-content: space-around;
+      margin: 2.75rem 0;
+      svg {
+        width: 30%;
+      }
+    }
+    .ytsub {
+      img {
+        width: 30%;
+      }
+    }
+  }
 `

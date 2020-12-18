@@ -70,6 +70,21 @@ const StyledContainer = styled.section`
       font-size: ${props => props.theme.fontSizes[5]};
     }
     h4 {
+      font-size: ${props => props.theme.fontSizes[5]};
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: ${props => props.theme.fontSizes[9]};
+    }
+    h2 {
+      font-size: ${props => props.theme.fontSizes[7]};
+    }
+    h3 {
+      font-size: ${props => props.theme.fontSizes[5]};
+    }
+    h4 {
       font-size: ${props => props.theme.fontSizes[4]};
     }
   }

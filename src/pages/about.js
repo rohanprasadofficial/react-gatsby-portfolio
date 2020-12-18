@@ -139,4 +139,15 @@ const StyledAbout = styled.section`
       margin-top: -100px;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    svg {
+      width: 280px;
+      margin-top: -150px;
+    }
+  }
 `
