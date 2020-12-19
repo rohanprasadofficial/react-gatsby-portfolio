@@ -18,7 +18,7 @@ export default function Experience() {
     let d1 = document.querySelectorAll(".orgdesc")
     d1.forEach(e => {
       e.classList.add("inactive-desc")
-      if (dt == e.getAttribute("data-target")) {
+      if (dt === e.getAttribute("data-target")) {
         e.classList.remove("inactive-desc")
       }
     })
@@ -44,7 +44,13 @@ export default function Experience() {
 
         <div className="orgcontainer">
           <div className="orglist">
-            <div className="orglist__item" onClick={showDesc}>
+            <div
+              role="button"
+              onKeyPress={showDesc}
+              className="orglist__item"
+              onClick={showDesc}
+              tabIndex={-5}
+            >
               <h5 className="orglist__item--title" data-target="1">
                 Microsoft
               </h5>
@@ -52,7 +58,13 @@ export default function Experience() {
                 <AiFillCaretRight />
               </span>
             </div>
-            <div className="orglist__item" onClick={showDesc}>
+            <div
+              role="button"
+              onKeyPress={showDesc}
+              className="orglist__item"
+              onClick={showDesc}
+              tabIndex={-4}
+            >
               <h5 className="orglist__item--title inactive-org" data-target="2">
                 Keysight Technolgies
               </h5>
@@ -60,7 +72,13 @@ export default function Experience() {
                 <AiFillCaretRight />
               </span>
             </div>
-            <div className="orglist__item" onClick={showDesc}>
+            <div
+              role="button"
+              onKeyPress={showDesc}
+              className="orglist__item"
+              onClick={showDesc}
+              tabIndex={-3}
+            >
               <h5 className="orglist__item--title inactive-org" data-target="3">
                 EXFIT
               </h5>
@@ -69,7 +87,13 @@ export default function Experience() {
               </span>
             </div>
 
-            <div className="orglist__item" onClick={showDesc}>
+            <div
+              role="button"
+              onKeyPress={showDesc}
+              className="orglist__item"
+              onClick={showDesc}
+              tabIndex={-2}
+            >
               <h5 className="orglist__item--title inactive-org" data-target="4">
                 Bharg Technologies
               </h5>
@@ -78,7 +102,13 @@ export default function Experience() {
               </span>
             </div>
             <div>
-              <div className="orglist__item" onClick={showDesc}>
+              <div
+                role="button"
+                onKeyPress={showDesc}
+                className="orglist__item"
+                onClick={showDesc}
+                tabIndex={-1}
+              >
                 <h5
                   className="orglist__item--title inactive-org"
                   data-target="5"

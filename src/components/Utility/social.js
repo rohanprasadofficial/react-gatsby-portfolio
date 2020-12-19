@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { FaYoutube, FaLinkedinIn } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
 import { AiOutlineGithub } from "react-icons/ai"
-import { Link } from "gatsby"
 
 const sociallinks = {
   facebook: "https://www.facebook.com/rohanprasadofficial",
@@ -19,18 +18,18 @@ const sociallinks = {
 export default function Social() {
   return (
     <StyledSocial>
-      <Link to={sociallinks.linkedin} target={sociallinks.target}>
+      <a href={sociallinks.linkedin} target="_blank" rel="noreferrer">
         <FaLinkedinIn className="linkedin" />
-      </Link>
-      <Link to={sociallinks.github} target={sociallinks.target}>
+      </a>
+      <a href={sociallinks.github} target="_blank" rel="noreferrer">
         <AiOutlineGithub className="github" />
-      </Link>
-      <Link to={sociallinks.youtube} target={sociallinks.target}>
+      </a>
+      <a href={sociallinks.youtube} target="_blank" rel="noreferrer">
         <FaYoutube className="youtube" />
-      </Link>
-      <Link to={sociallinks.instagram} target={sociallinks.target}>
+      </a>
+      <a href={sociallinks.instagram} target="_blank" rel="noreferrer">
         <GrInstagram className="instagram" />
-      </Link>
+      </a>
     </StyledSocial>
   )
 }

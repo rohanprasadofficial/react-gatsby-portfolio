@@ -1,8 +1,10 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
 export default function Newsletter() {
+  const openWindow = () => {
+    window.open("https://buttondown.email/rohanprasadofficial", "popupwindow")
+  }
   return (
     <StyledNewsletter>
       <h3>tiny information to your inbox</h3>
@@ -14,7 +16,7 @@ export default function Newsletter() {
         action="https://buttondown.email/api/emails/embed-subscribe/rohanprasadofficial"
         method="post"
         target="popupwindow"
-        onSubmit="window.open('https://buttondown.email/rohanprasadofficial', 'popupwindow')"
+        onSubmit={openWindow}
         className="embeddable-buttondown-form"
       >
         <input
@@ -28,9 +30,9 @@ export default function Newsletter() {
           Subscribe
         </button>
         <p>
-          <Link href="https://buttondown.email" target="_blank">
+          <a href="https://buttondown.email" target="_blank" rel="noreferrer">
             Powered by Buttondown.
-          </Link>
+          </a>
         </p>
       </form>
     </StyledNewsletter>

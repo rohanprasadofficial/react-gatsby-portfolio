@@ -3,6 +3,7 @@ import { SEO } from "../components"
 import styled from "styled-components"
 import Newsletter from "../components/Utility/newsletter"
 import Container from "../components/container"
+import Social from "../components/Utility/social"
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
         <h4>builds beautifully creative things @Microsoft </h4>
 
         <Newsletter />
+        <Social />
       </StyledHome>
     </Container>
   )

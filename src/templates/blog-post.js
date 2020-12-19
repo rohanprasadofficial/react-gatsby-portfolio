@@ -3,12 +3,14 @@ import { graphql, Link } from "gatsby"
 import Container from "../components/container"
 import styled from "styled-components"
 import { IoIosArrowBack } from "react-icons/io"
+import { SEO } from "../components"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
 
   return (
     <Container>
+      <SEO title={post.frontmatter.title} />
       <StyledPost>
         <Link to="/blog">
           <IoIosArrowBack />

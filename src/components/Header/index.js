@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import Navbar from "../Utility/Navbar/navbar"
+import Navbar from "../Utility/navbar"
 
 const Header = ({ siteTitle, toggleTheme, isDark }) => (
   <StyledHeader>

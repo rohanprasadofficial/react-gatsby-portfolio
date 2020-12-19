@@ -1,6 +1,5 @@
 import * as React from "react"
 import styled from "styled-components"
-import Container from "../../components/container"
 
 function Timeline(props) {
   return (
