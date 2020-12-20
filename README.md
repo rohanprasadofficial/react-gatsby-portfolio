@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/rohanprasadofficial/react-portfolio/prod/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/rohanprasadofficial/react-gatsby-portfolio/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
   rohanprasad.dev
@@ -16,13 +16,13 @@
 
 ## To support or use please ⭐ this repository.
 
-![demo-dark](https://raw.githubusercontent.com/rohanprasadofficial/react-portfolio/main/src/images/dark-demo.png)
+![demo-dark](https://raw.githubusercontent.com/rohanprasadofficial/react-gatsby-portfolio/main/src/images/dark-demo.png)
 <br/>
 
 <hr/>
 <br/>
 
-![demo-light](https://raw.githubusercontent.com/rohanprasadofficial/react-portfolio/main/src/images/light-demo.pn)
+![demo-light](https://raw.githubusercontent.com/rohanprasadofficial/react-gatsby-portfolio/main/src/images/light-demo.png)
 
 ## 🚨 Forking & Cloning this repo (!important)
 
