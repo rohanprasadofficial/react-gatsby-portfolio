@@ -11,6 +11,7 @@ export default function About() {
 
       <StyledAbout>
         <h2>about</h2>
+
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img
             src={logo}
