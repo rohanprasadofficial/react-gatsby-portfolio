@@ -1,8 +1,8 @@
 {
   "name": "react-portfolio",
   "private": true,
-  "description": "Portfolio site built on React , powered by gatsby & styled-components",
-  "version": "0.1.0",
+  "description": "Minimal portfolio site built on React , powered by gatsby & styled-components",
+  "version": "1.0.0",
   "author": "Rohan Prasad <rohanpd.work@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.21",
@@ -35,9 +35,10 @@
     "Rohan Prasad",
     "rohan prasad",
     "Rohan",
-    "Rohan Youtube"
+    "Rohan Youtube",
+    "Rohan Microsoft"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -49,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/rohanprasadofficial/react-portfolio"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/rohanprasadofficial/react-portfolio/issues"
   }
 }
