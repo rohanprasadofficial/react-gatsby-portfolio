@@ -49,10 +49,7 @@ export default function Contact() {
           action="https://formspree.io/f/mqkgyjek"
           method="POST"
         >
-          <label htmlFor="name" for="name">
-            Your Name
-          </label>{" "}
-          <br />
+          <label htmlFor="name">Your Name</label> <br />
           <input
             name="Name"
             id="name"
@@ -60,10 +57,7 @@ export default function Contact() {
             placeholder="Rohan Prasad"
           />{" "}
           <br />
-          <label htmlFor="email" for="email">
-            Your Email
-          </label>{" "}
-          <br />
+          <label htmlFor="email">Your Email</label> <br />
           <input
             name="Email"
             id="email"
@@ -71,10 +65,7 @@ export default function Contact() {
             placeholder="rohan@example.com"
           />{" "}
           <br />
-          <label htmlFor="description" for="description">
-            Description
-          </label>{" "}
-          <br />
+          <label htmlFor="description">Description</label> <br />
           <textarea
             name="description"
             rows="10"

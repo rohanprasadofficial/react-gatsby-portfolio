@@ -43,6 +43,7 @@ const StyledContainer = styled.section`
   flex-direction: column;
   justify-content: space-around;
   padding: 0 2rem;
+  margin-bottom: 2rem;
   h1 {
     font-size: ${props => props.theme.fontSizes[13]};
     color: ${props => props.theme.body.title.foreground};

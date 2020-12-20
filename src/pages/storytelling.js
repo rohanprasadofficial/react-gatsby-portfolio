@@ -2,11 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
 import { SEO } from "../components"
+import { Link } from "gatsby"
+import { IoIosArrowBack } from "react-icons/io"
 export default function StoryTelling() {
   return (
     <Container>
       <SEO title="Storytelling" />
       <StyledST>
+        <Link to="/">
+          <IoIosArrowBack className="back" />
+        </Link>
         <div>
           <h2>storytelling & filmmaking</h2>
           <h3>“ Those who tell the stories rule the world “</h3>
@@ -37,6 +42,12 @@ export default function StoryTelling() {
 }
 
 const StyledST = styled.section`
+  background-color: ${props => props.theme.body.background};
+  .back {
+    height: 40px;
+    width: 40px;
+    color: ${props => props.theme.body.button.background};
+  }
   h2 {
     margin-bottom: 2rem;
   }

@@ -13,10 +13,14 @@ export default function Blog({ data }) {
 
       <StyledBlog>
         <h2>my blog posts</h2>
+        <p className="funfact">
+          fun fact : my mom still thinks being an SWE I can repair the faulty TV
+          at my home.
+        </p>
         {posts.map((post, index) => (
           <article key={post.id}>
             <Link to={post.fields.slug}>
-              <h4>{post.frontmatter.title} ↗</h4>
+              <h3>{post.frontmatter.title} ↗</h3>
             </Link>
             <small>
               {post.frontmatter.author}, {post.frontmatter.date}
@@ -34,16 +38,18 @@ const StyledBlog = styled.section`
   a {
     text-decoration: none;
   }
-  h4 {
+  h3 {
     margin-top: 2rem;
-    font-size: 1.2rem;
-    color: ${props => props.theme.body.title.foreground};
+    margin-bottom: 0.5rem;
   }
   small {
     color: ${props => props.theme.body.description.foreground};
   }
   p {
     margin: 0 auto;
+  }
+  .funfact {
+    margin: 0.5rem 0;
   }
 `
 

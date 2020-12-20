@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Rohan Prasad`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Rohan is a Software Engineer based in India , currently working at Microsoft as a UX Developer - Consultant`,
     author: `@rohanprasadofficial`,
     youtube: `@rohanprasadofficial`,
     linkedin: `@rohanprasadofficial`,
@@ -25,10 +25,10 @@ module.exports = {
         name: `Rohan Prasad`,
         short_name: `Ro.`,
         start_url: `/`,
-        background_color: "#6b37bf",
-        theme_color: "#6b37bf",
+        background_color: "#00000",
+        theme_color: "#ffffff",
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/logo.png`,
         crossOrigin: `use-credentials`,
         // This path is relative to the root of the site.
       },

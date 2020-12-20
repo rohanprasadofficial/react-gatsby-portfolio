@@ -3,6 +3,8 @@ import { AiFillCaretRight } from "react-icons/ai"
 import styled from "styled-components"
 import Container from "../components/container"
 import { SEO } from "../components/"
+import { Link } from "gatsby"
+import { IoIosArrowBack } from "react-icons/io"
 export default function Experience() {
   /* I have done this intentionally the old school and not having state
    based tab thing because i want you to make PR on this with great class based code.*/
@@ -28,6 +30,9 @@ export default function Experience() {
     <Container>
       <SEO title="Experience" />
       <StyledDiv>
+        <Link to="/">
+          <IoIosArrowBack className="back" />
+        </Link>
         <h2> where i work </h2>
         <p>
           coming from Computer Science backgroud i kept exploring various
@@ -224,12 +229,19 @@ export default function Experience() {
 }
 
 const StyledDiv = styled.div`
+  background-color: ${props => props.theme.body.background};
+
   h2 {
     margin-bottom: 1rem;
   }
   .orgcontainer {
     display: flex;
     justify-content: space-around;
+  }
+  .back {
+    height: 40px;
+    width: 40px;
+    color: ${props => props.theme.body.button.background};
   }
 
   .orgdesc {
