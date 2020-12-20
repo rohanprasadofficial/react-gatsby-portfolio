@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://app.netlify.com/sites/heuristic-williams-181974/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+    <img src="https://api.netlify.com/api/v1/badges/7486bd2e-18b1-4257-bf51-4a5a7865890e/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
@@ -34,6 +34,13 @@ I am keeping this sie public / opensource because i value the spirit of opensour
 If you are using it without giving me credit , i will feel dishearthen.
 
 Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+
+## Contributing
+
+Please work on the branch "dev" present in the repo.
+While making PR please make it on dev branch , i will test it on testing enviroment and mrege it to main.
+
+Only branch "prod/main" goes live.
 
 ### TL;DR
 

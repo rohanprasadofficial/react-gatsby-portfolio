@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { SEO } from "../components"
@@ -19,6 +18,7 @@ export default function Contact() {
         form.reset()
         setStatus("SUCCESS")
       } else {
+        console.log(xhr)
         setStatus("ERROR")
       }
     }
@@ -38,9 +38,13 @@ export default function Contact() {
         <p>
           Please follow while reaching out :{" "}
           <span>
-            <Link to="https://sbmueller.github.io/nohello/" target="blank">
+            <a
+              href="https://sbmueller.github.io/nohello/"
+              target="_blank"
+              rel="noreferrer"
+            >
               [ LINK ]
-            </Link>
+            </a>
           </span>
         </p>
         <h3>OR</h3>

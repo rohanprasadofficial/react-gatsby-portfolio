@@ -131,7 +131,7 @@ export default function Experience() {
             <p>
               <strong> Hyderabad , India </strong>
             </p>
-            <p style={{ color: "green" }}>currently</p>
+            <p className="currently">currently</p>
             <ul>
               <li>- work on building web ui day in and out. </li>
               <li>
@@ -297,5 +297,8 @@ const StyledDiv = styled.div`
     & + span {
       display: none;
     }
+  }
+  .currently {
+    color: ${props => props.theme.body.highlight};
   }
 `
