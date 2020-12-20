@@ -25,9 +25,9 @@ export default function About() {
         </div>
 
         <p>
-          Hey , thanks for reading by. This is me in a highly edit picture if
-          mine where i look good which i am not. i am Rohan. many people call me
-          Ro. & i like it that way.
+          Hey , thanks for reading by. This is me in a highly edited picture of
+          mine where i look good which i am not. <br />i am Rohan. many people
+          call me Ro. & i like it that way.
         </p>
 
         <article>
@@ -47,7 +47,7 @@ export default function About() {
           <p>
             I was born and brought in the beautiful place in “northern bengal”
             based out in “India.” if you ever visit my place we might have a tea
-            together someday produced just nearby my home.
+            together someday which is produced just nearby my home.
           </p>
         </article>
 
@@ -80,19 +80,8 @@ export default function About() {
           </strong>
 
           <p>
-            I love bike rides and travelling solo. I would definetely start
-            travelling around and making vlogs & stories .
-          </p>
-        </article>
-
-        <article>
-          <strong>
-            <h4>some personal interest </h4>
-          </strong>
-
-          <p>
             getting into Computer Science & Engineering which i had no idea how
-            will do by just having a interest of computers. Hostel is one the
+            i will do by just having an interest of computers. Hostel is one the
             best things happened to my life. “It taught how to live a life”. I
             was always a introvert & extrovert too depends upon the people i am
             surrounded with. I still miss the 2 AM hostel stories & the birthday

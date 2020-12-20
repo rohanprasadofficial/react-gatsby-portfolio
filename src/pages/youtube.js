@@ -93,7 +93,7 @@ export default function Youtube() {
           Then i move into the a coding club as well in my college where i used
           to teach students programming and guide them too. It was the fantastic
           journey so far but after getting into job also i wanted to follow my
-          passion of teaching and these YouTube is one the best platform to
+          passion of teaching and as of now YouTube is one the best platform to
           reach broader and needy students.
         </p>
         <p>
@@ -102,8 +102,7 @@ export default function Youtube() {
         </p>
         <p>
           Also i am trying to combine my film making interest to coding to bring
-          something new on the table. ( Checkout my life section for my film
-          making story. )
+          something new on the table. ( Checkout storytelling section)
         </p>
         <p>
           <span>Passion : </span>I am passionate about teaching and mentoring.
