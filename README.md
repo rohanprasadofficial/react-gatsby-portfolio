@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/heuristic-williams-181974/deploys" target="_blank">
+  <a href="https://app.netlify.com/sites/distracted-golick-75381e/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/7486bd2e-18b1-4257-bf51-4a5a7865890e/deploy-status" alt="Netlify Status" />
   </a>
 </p>
