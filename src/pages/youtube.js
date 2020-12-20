@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
@@ -124,12 +123,13 @@ export default function Youtube() {
           <h3>Rohan Prasad</h3>
           <p>tech videos & vlogs</p>
           <button>
-            <Link
-              to="https://www.youtube.com/rohanprasadofficial?sub_confirmation=1"
-              target="blank"
+            <a
+              href="https://www.youtube.com/rohanprasadofficial?sub_confirmation=1"
+              target="_blank"
+              rel="noreferrer"
             >
               Subscribe
-            </Link>
+            </a>
           </button>
         </div>
       </StyledYoutube>
